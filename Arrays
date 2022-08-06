@@ -1,0 +1,14 @@
+#Array is the collections of similar datatype elements
+#IN python their list is same as array but it can stores different datatype elementss also
+#we can access element through  indexing.
+#Their are two types of arrays
+#1.static array=it has fixed size
+#2.Dynamic array that is we can any number of elements we don't want specify the size of array
+a=[1,2,3,4]
+print(a[0])
+print(a[1:N])
+a.append(2)
+a.insert(1,25)
+a.remove(obj)
+this are the some important functions we can use in list
+list is dyanmic array
