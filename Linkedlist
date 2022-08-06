@@ -1,0 +1,37 @@
+class node:
+    def __init__(self,data=None,next=None):
+          self.data=data
+          self.next=next
+class linkedlist:
+    def __init(self,head=None):
+          self.head=None
+    def insert_at_beginning(self,data):
+          Node=node(data,self.head)
+          self.head=Node
+    def insert_at_end(self,data):
+          if self.head is None:
+              return
+           current=self.head
+           while current.next:
+                current=current.next
+            current.next=Node(data)
+     def print(self):
+          if self.head is None:
+              return "empty"
+           itr=self.head
+           while itr:
+              print(itr.data)
+              itr=itr.next
+     def insert_at(self,index,data):
+          if index<0:
+            return "can't insert"
+            count=0
+          if index==0:
+              self.insert_at_beginning(data)
+           itr=self.head
+           while True:
+            if count=index-1:
+              Node=node(data,itr.next)
+              itr.next=Node
+              
+         
