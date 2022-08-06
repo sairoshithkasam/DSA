@@ -1,0 +1,12 @@
+class hashtable:
+    def __init__(self):
+        self.max=100
+        self.arr=[None for i in range(self.max)]
+    def hasheq(self,key):
+        c=0
+        for i in key:
+           c+=ord(i)
+        return c%10
+a=hashtable()
+b=a.hasheq("ASsDDD")
+print(b)  
