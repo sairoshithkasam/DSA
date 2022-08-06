@@ -1,0 +1,23 @@
+class hashtable:
+    def __init__(self):
+        self.max=100
+        self.arr=[None for i in range(self.max)]
+    def hasheq(self,key):
+        c=0
+        for i in key:
+           c+=ord(i)
+        return c%10
+    def setitem(self,key,value):
+        h=hasheq(key)
+        found=False
+        for idx,number in enumerate(self.arr[h]):
+            if len(number)==2 and number[0]==key:
+                self.arr[h][idx]=(key,value)
+                found=True
+                break
+        self.arr[h].append((key,value))
+        
+a=hashtable()
+b=a.hasheq("ASsDDD")
+
+print(b)  
