@@ -15,7 +15,7 @@ class linkedlist:
         current=self.head
         while current.next:
             current=current.next
-        current.next=node(data,None)
+        current.next=Node(data,None)
     def insert_at(self,index,data):
         if index==0:
             self.inserting_at_beginning(data)
