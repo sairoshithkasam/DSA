@@ -21,3 +21,7 @@ a=hashtable()
 b=a.hasheq("ASsDDD")
 
 print(b)  
+
+The best data structure to use here was a dictionary (internally a hash table) because we wanted
+to know temperature for specific day, requiring key, value pair access where you can look up an element by day using O(1) complexity
+
