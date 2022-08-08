@@ -1,0 +1,8 @@
+class stack:
+  def __init(self):
+      self.container=deque()
+  def push(Self,value):
+      self.container.append(value)
+  def pop(self):
+      self.container.pop()
+      
