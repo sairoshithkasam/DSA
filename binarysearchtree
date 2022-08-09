@@ -1,0 +1,17 @@
+def binarysearchtree(self):
+    self.data=data
+    self.left=None
+    self.right=None
+def inserting(self,data):
+    if self.data==data:
+        return
+    if self.data>data:
+        if self.left:
+            self.left.inserting(data)
+        else:
+            self.left=binarysearchtree(data)
+    if self.data<data:
+        if self.right:
+            self.right.inserting(data)
+        else:
+            self.right=binarysearchtree(data)
