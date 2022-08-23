@@ -24,7 +24,7 @@ class linkedlist:
         count=0
         while index=count-1:
             Node=node(data,self.next)
-            self.next=node
+            self.next=Node
             break
         itr=itr.next
         c+=1
