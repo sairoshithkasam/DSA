@@ -1,0 +1,12 @@
+def quicksort(a,start,end):
+ partition(a,start,end)
+ quicksort(a,start,mid-1)
+ quicksort(a,mid+1,end)
+def partition(a,start,end):
+pivot=a[end]
+po=start
+for i in range(start,end-1):
+if pivot>a[i]:
+a[i],a[po]=a[po],a[i]
+  po+=1
+  
