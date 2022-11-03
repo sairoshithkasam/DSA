@@ -25,4 +25,5 @@ def deletion(self,data):
             node=node.lchild
         self.key=node.key
         self.rchild=self.rchild.delete(node.key)
+        return self
     
